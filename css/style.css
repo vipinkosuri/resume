@@ -1,0 +1,167 @@
+
+/* Fonts Reference */
+
+/* Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/* Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/* Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+
+
+/* Defining basic styling */
+
+body{
+  margin: 0;
+  font-family: "San Francisco", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.333em;
+  color: #333;
+  background-color: #E0E3E4;
+}
+
+.container{
+  width: 100%;
+  border: 1em solid #fff;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+
+
+/* Layout */
+
+.wrapper{
+  max-width: 1036px;
+  margin: 0 auto;
+  padding-top: 8em;
+}
+
+.headline{
+  padding-left: 39.7683%;
+}
+
+main{
+  max-width: 60.2316%;
+  float: right;
+  margin-top: 4em;
+}
+
+aside{
+  max-width: 39.7683%;
+  float: left;
+  padding-right: 9.4594%;
+  box-sizing: border-box;
+  margin-top: 4em;
+}
+
+.column-small{
+  margin-bottom: 3em;
+}
+
+
+
+/* Font Styling */
+
+.headline-text{
+  font-size: 4.625em;
+  line-height: 1.02777em;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+.secondary-headline{
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.company-name{
+  font-size: 2.5em;
+  font-weight: 700;
+  -webkit-margin-after: 0;
+}
+
+.job-date{
+  font-size: 0.4em;
+  font-weight: 600;
+  margin-left: 0.25em;
+}
+
+.job-title{
+  font-size: 0.875em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-margin-before: 0.25em;
+  -webkit-margin-after: 0.50em;
+}
+
+.education-institute{
+  font-size: 1.125em;
+  font-weight: 700;
+  -webkit-margin-after: 0;
+}
+
+.year{
+  font-size: 0.875em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.mobile-text{
+  font-size: 0.875em;
+  -webkit-margin-before: 0.75em;
+  -webkit-margin-after: 0.75em;
+}
+
+
+
+/* Default List Styles */
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+/* Experience Section */
+
+.job-description{
+  box-sizing: border-box;
+  padding-left: 6.4em;
+}
+
+.job-role{
+  padding-bottom: 0.5em;
+}
+
+.title-plusone{
+  margin-top: 1em;
+}
+
+.job-role:before{
+  content: "\21b3";
+  margin-left: -30px;
+  padding-right: 10px;
+  opacity: 0.5;
+}
