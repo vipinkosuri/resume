@@ -70,14 +70,14 @@ main{
   max-width: 60.2316%;
   float: right;
   margin-top: 4em;
-  animation: 6s load-two;
+  animation: 5s load-two;
 }
 
 aside{
   max-width: 33.590%;
   float: left;
   margin-top: 4em;
-  animation: 6s load-two;
+  animation: 5s load-two;
 }
 
 .column-small{
@@ -102,7 +102,7 @@ aside{
   line-height: 1.02777em;
   font-weight: 400;
   -webkit-margin-before: 0.324em;
-  animation: 5s load-two;
+  animation: 4s load-two;
 }
 
 .secondary-headline{
@@ -161,7 +161,7 @@ ul{
   background-color: #333;
   color: #fff;
   padding: 0 6px;
-  margin-top: 0.5em;
+  margin: 0.5em 0 0 0.5em;
   position: absolute;
 }
 
