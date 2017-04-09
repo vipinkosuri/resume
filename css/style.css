@@ -157,13 +157,11 @@ ul{
   font-family: 'Chivo', sans-serif;
   font-size: 0.333em;
   font-weight: 400;
-  margin-left: 0.25em;
+  line-height: 1.5em;
   background-color: #333;
   color: #fff;
   padding: 0 6px;
-  margin-top: 2px;
-  display: inline-block;
-  float: right;
+  margin-top: 0.5em;
   position: absolute;
 }
 
