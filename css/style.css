@@ -70,14 +70,14 @@ main{
   max-width: 60.2316%;
   float: right;
   margin-top: 4em;
-  animation: 7s load-two;
+  animation: 6s load-two;
 }
 
 aside{
   max-width: 33.590%;
   float: left;
   margin-top: 4em;
-  animation: 7s load-two;
+  animation: 6s load-two;
 }
 
 .column-small{
@@ -89,7 +89,7 @@ aside{
 /* Header */
 
 .logo{
-  animation: ease-out 3s load-one;
+  animation: ease-out 2s load-one;
 }
 
 
@@ -102,7 +102,7 @@ aside{
   line-height: 1.02777em;
   font-weight: 400;
   -webkit-margin-before: 0.324em;
-  animation: 6s load-two;
+  animation: 5s load-two;
 }
 
 .secondary-headline{
