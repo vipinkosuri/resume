@@ -15,7 +15,6 @@
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
 
-/* Abril */
 @font-face {
   font-family: 'Abril Fatface';
   font-style: normal;
@@ -71,16 +70,26 @@ main{
   max-width: 60.2316%;
   float: right;
   margin-top: 4em;
+  animation: 7s load-two;
 }
 
 aside{
   max-width: 33.590%;
   float: left;
   margin-top: 4em;
+  animation: 7s load-two;
 }
 
 .column-small{
   margin-top: 3em;
+}
+
+
+
+/* Header */
+
+.logo{
+  animation: ease-out 3s load-one;
 }
 
 
@@ -93,7 +102,9 @@ aside{
   line-height: 1.02777em;
   font-weight: 400;
   -webkit-margin-before: 0.324em;
+  animation: 6s load-two;
 }
+
 .secondary-headline{
   font-size: 1.125em;
   font-weight: 400;
@@ -135,9 +146,11 @@ ul{
 }
 
 .company-name{
-  font-size: 2.25em;
+  font-size: 2.5em;
   font-weight: 700;
   -webkit-margin-after: 0;
+  clear:both;
+  padding-bottom: 0.2em;
 }
 
 .job-date{
@@ -147,7 +160,11 @@ ul{
   margin-left: 0.25em;
   background-color: #333;
   color: #fff;
-  padding: 1px 6px;
+  padding: 0 6px;
+  margin-top: 2px;
+  display: inline-block;
+  float: right;
+  position: absolute;
 }
 
 .job-title{
@@ -203,4 +220,20 @@ ul{
   -webkit-margin-before: 0.75em;
   -webkit-margin-after: 0.75em;
   line-height: 1.2857em;
+}
+
+
+
+/* Animations */
+
+@keyframes load-one {
+  0% { opacity: 0; transform: translateY(2em);}
+  50%{ opacity: 0.4;}
+  100%{ opacity: 1; transform: translateY(0);}
+}
+
+@keyframes load-two {
+  0% { opacity: 0;}
+  70% {opacity: 0;}
+  100%{ opacity: 1;}
 }
