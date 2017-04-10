@@ -1,3 +1,31 @@
+/* Reset Styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
 
 /* Fonts Reference */
 
@@ -15,6 +43,7 @@
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
 
+/* Headline */
 @font-face {
   font-family: 'Abril Fatface';
   font-style: normal;
@@ -22,7 +51,7 @@
   src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v8/X1g_KwGeBV3ajZIXQ9VnDgYWpCd0FFfjqwFBDnEN0bM.woff2) format('woff2');
 }
 
-/* latin */
+/* Date */
 @font-face {
   font-family: 'Chivo';
   font-style: normal;
@@ -32,10 +61,9 @@
 
 
 
-/* Defining basic styling */
+/* Layout */
 
 body{
-  margin: 0;
   font-family: "San Francisco", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1.125em;
@@ -51,10 +79,6 @@ body{
   box-sizing: border-box;
 }
 
-
-
-/* Layout */
-
 .wrapper{
   max-width: 1036px;
   margin: 0 auto;
@@ -62,95 +86,86 @@ body{
   overflow: auto;
 }
 
-.headline{
-  padding-left: 39.7683%;
-}
-
-main{
-  max-width: 60.2316%;
-  float: right;
-  margin-top: 4em;
-  animation: 5s load-two;
-}
-
-aside{
-  max-width: 33.590%;
-  float: left;
-  margin-top: 4em;
-  animation: 5s load-two;
-}
-
 
 
 /* Header */
 
-.logo{
-  animation: ease-out 2s load-one;
+.headline{
+  margin-bottom: 3.1111em;
+  padding-left: 39.7683%;
 }
 
+.headline_logo{
+  animation: ease-out 1s load-one;
+}
 
-
-/* Font Styling */
-
-.headline-text{
+.headline_text{
   font-family: 'Abril Fatface', cursive;
   font-size: 4.625em;
   line-height: 1.02777em;
   font-weight: 400;
-  -webkit-margin-before: 0.324em;
-  animation: 4s load-two;
+  margin: 0.324em 0 0.1em;
+  animation: 2s load-two;
 }
 
-.secondary-headline{
+.headline_social{
+animation: 3s load-two;
+}
+
+.headline_social_link{
+  font-family: 'Chivo', sans-serif;
+  font-size: 0.6667em;
+  font-weight: 400;
+  color: #B6A58A;
+  letter-spacing: 1px;
+  text-decoration: underline dotted;
+  text-transform: uppercase;
+  float:left;
+  margin-right: 1.5em;
+}
+
+/* ––––––––––––– */
+
+
+
+
+/* Content */
+
+
+.content{
+  margin-top: 4em;
+  animation: 3s load-two;
+}
+
+
+.content_headline{
   font-size: 1.125em;
   font-weight: 400;
   opacity: 0.6;
+  padding: 0.5em 0 1em 0;
 }
-
-
-
-/* Default List Styles */
-
-ul{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 
 
 /* Experience Section */
 
-.job-description{
-  box-sizing: border-box;
-  padding-left: 6.4em;
+.content_main{
+  max-width: 60.2316%;
+  float: right;
 }
 
-.job-role{
-  padding-bottom: 0.5em;
+.experience_list{
+  margin-bottom: 2.6667em;
 }
 
-.title-plusone{
-  margin-top: 1em;
-}
-
-.job-role:before{
-  content: "\21b3";
-  margin-left: -30px;
-  padding-right: 10px;
-  opacity: 0.5;
-}
-
-.company-name{
+.experience_company{
   font-size: 2em;
   font-weight: 700;
   line-height: 1em;
-  -webkit-margin-after: 0;
   clear:both;
   padding-bottom: 0.2em;
 }
 
-.job-date{
+.experience_year{
   font-family: 'Chivo', sans-serif;
   font-size: 0.333em;
   font-weight: 400;
@@ -162,64 +177,80 @@ ul{
   position: absolute;
 }
 
-.job-title{
+.job_description{
+  box-sizing: border-box;
+  padding-left: 6.4em;
+}
+
+.job_role{
+  padding-bottom: 0.5em;
+}
+
+.job_role:before{
+  content: "\21b3";
+  margin-left: -30px;
+  padding-right: 10px;
+  opacity: 0.5;
+}
+
+.job_title{
   font-size: 0.875em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #D0011B;
-  -webkit-margin-before: 0.25em;
-  -webkit-margin-after: 0.25em;
+  margin: 0.25em 0 0.25em 0;
 }
 
 
 
 /* Aside Section */
 
+.content_aside{
+  max-width: 33.590%;
+  float: left;
+}
 
-
-.column-small{
+.column_small{
   margin-top: 2em;
 }
 
-.portrait{
+.content_portrait{
   max-width: 100%;
 }
 
-.education-background{
+.column_background_education{
   background-color: #FFDD98;
   box-sizing: border-box;
   padding: 0.8888em 1.7778em 0.8888em 1.7778em;
   color: #AD4618;
 }
 
-.skills-background{
+.column_background_skills{
   background-color: #D3E5FD;
   box-sizing: border-box;
   padding: 0.8888em 1.7778em 0.8888em 1.7778em;
   color: #2E4B78;
 }
 
-.education-institute{
+.education_institute{
   font-size: 1em;
   font-weight: 700;
-  -webkit-margin-after: 0;
+  margin: 0.;
 }
 
-.year{
+.education_year{
   font-family: 'Chivo', sans-serif;
   font-size: 0.6667em;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
+  margin-bottom: 0.6667em;
 }
 
-.mobile-text{
+.education_desciption, .skills_description{
   font-size: 0.778em;
-  -webkit-margin-before: 0.75em;
-  -webkit-margin-after: 0.75em;
+  margin: 0 0 0.5714em;
   line-height: 1.2857em;
 }
 
@@ -247,27 +278,27 @@ ul{
 
     body{ font-size: 1em;}
     .wrapper{ padding: 6em 2em;}
-    .job-description{ padding-left: 3em;}
-    .column-small{ margin-top: 1.5em;}
-    .mobile-text{ font-size: 0.875em;}
+    .job_description{ padding-left: 3em;}
+    .column_small{ margin-top: 1.5em;}
+    .education_desciption, .skills_description{ font-size: 0.875em;}
 }
 
 @media only screen and (max-width: 744px) {
 
   body{ font-size: 1em;}
   .headline{ padding-left: 0;}
-  main, aside{
+  .content_main, .content_aside{
     float: none;
     max-width: 100%;
   }
-  aside{ border-top: 8px solid #333;}
+  .content_aside{ border-top: 8px solid #333;}
   .wrapper{ padding: 6em 2em;}
-  .job-description{ padding-left: 3em;}
-  .job-role:before { margin-left: -26px;}
-  .column-small{ margin-top: 1.5em;}
-  .mobile-text{ font-size: 0.875em;}
-  .job-date{ font-size: 0.375em;}
-  .portrait{ display: none;}
+  .job_description{ padding-left: 3em;}
+  .job_role:before { margin-left: -26px;}
+  .column_small{ margin-top: 1.5em;}
+  .education_desciption, .skills_description{ font-size: 0.875em;}
+  .experience_year{ font-size: 0.375em;}
+  .content_portrait{ display: none;}
 }
 
 @media only screen and (max-width: 620px) {
@@ -275,13 +306,13 @@ ul{
 }
 
 @media only screen and (max-width: 480px) {
-  .logo{ animation: 1s load-one;}
-  main, aside{ animation: 1.5s load-two;}
-  .headline-text{ animation: 1.5s load-two;}
-  .company-name{ font-size: 1.7778em; letter-spacing: -0.3px}
-  .job-date{ font-size: 0.428em; margin: 0.5em 0 0.5em 0; position: inherit; display: block; background: none; color: #333; line-height: 0.5em; padding: 0;}
-  .job-description{ padding-left: 0;}
-  .job-role:before {
+  .headline_logo{ animation: 1s load-one;}
+  .content{ animation: 1.5s load-two;}
+  .headline_text{ animation: 1.5s load-two;}
+  .experience_company{ font-size: 1.7778em; letter-spacing: -0.3px}
+  .experience_year{ font-size: 0.428em; margin: 0.5em 0 0.5em 0; position: inherit; display: block; background: none; color: #333; line-height: 0.5em; padding: 0;}
+  .job_description{ padding-left: 0;}
+  .job_role:before {
     content: "\25B8";
     margin-left: -20px;
     padding-right: 10px; }
