@@ -243,7 +243,7 @@ ul{
 
 /* Responsive */
 
-@media screen and (min-device-width: 744px) and (max-device-width: 1036px) {
+@media only screen and (min-width: 744px) and (max-width: 1036px) {
 
     body{ font-size: 1em;}
     .wrapper{ padding: 6em 2em;}
@@ -252,7 +252,7 @@ ul{
     .mobile-text{ font-size: 0.875em;}
 }
 
-@media screen and (max-device-width: 744px) {
+@media only screen and (max-width: 744px) {
 
   body{ font-size: 1em;}
   .headline{ padding-left: 0;}
@@ -270,13 +270,16 @@ ul{
   .portrait{ display: none;}
 }
 
-@media screen and (max-device-width: 620px) {
+@media only screen and (max-width: 620px) {
   .container{ border: 0;}
 }
 
-@media screen and (max-device-width: 480px) {
-  .company-name{ font-size: 1.7778em;}
-  .job-date{ font-size: 0.428em; margin: 0.5em 0 0 0.5em;}
+@media only screen and (max-width: 480px) {
+  .logo{ animation: 1s load-one;}
+  main, aside{ animation: 1.5s load-two;}
+  .headline-text{ animation: 1.5s load-two;}
+  .company-name{ font-size: 1.7778em; letter-spacing: -0.3px}
+  .job-date{ font-size: 0.428em; margin: 0.5em 0 0.5em 0; position: inherit; display: block; background: none; color: #333; line-height: 0.5em; padding: 0;}
   .job-description{ padding-left: 0;}
   .job-role:before {
     content: "\25B8";
