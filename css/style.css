@@ -58,7 +58,7 @@ body{
 .wrapper{
   max-width: 1036px;
   margin: 0 auto;
-  padding: 8em 0;
+  padding: 8em 4em;
   overflow: auto;
 }
 
@@ -78,10 +78,6 @@ aside{
   float: left;
   margin-top: 4em;
   animation: 5s load-two;
-}
-
-.column-small{
-  margin-top: 3em;
 }
 
 
@@ -148,6 +144,7 @@ ul{
 .company-name{
   font-size: 2em;
   font-weight: 700;
+  line-height: 1em;
   -webkit-margin-after: 0;
   clear:both;
   padding-bottom: 0.2em;
@@ -161,7 +158,7 @@ ul{
   background-color: #333;
   color: #fff;
   padding: 0 6px;
-  margin: 0.5em 0 0 0.5em;
+  margin: 1em 0 0 0.5em;
   position: absolute;
 }
 
@@ -172,12 +169,18 @@ ul{
   letter-spacing: 1px;
   color: #D0011B;
   -webkit-margin-before: 0.25em;
-  -webkit-margin-after: 0.50em;
+  -webkit-margin-after: 0.25em;
 }
 
 
 
 /* Aside Section */
+
+
+
+.column-small{
+  margin-top: 2em;
+}
 
 .portrait{
   max-width: 100%;
@@ -234,4 +237,50 @@ ul{
   0% { opacity: 0; transform: translateY(1em);}
   70% {opacity: 0;}
   100%{ opacity: 1; transform: translateY(0);}
+}
+
+
+
+/* Responsive */
+
+@media screen and (min-width: 744px) and (max-width: 1036px) {
+
+    body{ font-size: 1em;}
+    .wrapper{ padding: 6em 2em;}
+    .job-description{ padding-left: 3em;}
+    .column-small{ margin-top: 1.5em;}
+    .mobile-text{ font-size: 0.875em;}
+}
+
+@media screen and (max-width: 744px) {
+
+  body{ font-size: 1em;}
+  .headline{ padding-left: 0;}
+  main, aside{
+    float: none;
+    max-width: 100%;
+  }
+  aside{ border-top: 8px solid #333;}
+  .wrapper{ padding: 6em 2em;}
+  .job-description{ padding-left: 3em;}
+  .job-role:before { margin-left: -26px;}
+  .column-small{ margin-top: 1.5em;}
+  .mobile-text{ font-size: 0.875em;}
+  .job-date{ font-size: 0.375em;}
+  .portrait{ display: none;}
+}
+
+@media screen and (max-width: 620px) {
+  .container{ border: 0;}
+}
+
+@media screen and (max-width: 480px) {
+  .company-name{ font-size: 1.7778em;}
+  .job-date{ font-size: 0.428em; margin: 0.5em 0 0 0.5em;}
+  .job-description{ padding-left: 0;}
+  .job-role:before {
+    content: "\25B8";
+    margin-left: -20px;
+    padding-right: 10px; }
+
 }
