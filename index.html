@@ -7,90 +7,100 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
+
   <body>
     <div class="container">
     <div class="wrapper">
+
     <header class="headline">
       <div>
-        <img class="logo" src="images/Logo.svg" alt="Logo of company"/>
+        <img class="headline_logo" src="images/Logo.svg" alt="Logo of company"/>
       </div>
-      <h1 class="headline-text">Thomas <br> Anderson</h1>
+      <h1 class="headline_text">Thomas <br> Anderson</h1>
+      <ul class="headline_social">
+        <li><a href="" alt="Contact on dribbble" class="headline_social_link">Dribbble</a></li>
+        <li><a href="" alt="Contact on behance" class="headline_social_link">Behance</a></li>
+        <li><a href="" alt="Contact on twitter" class="headline_social_link">Twitter</a></li>
+        <li><a href="" alt="Contact by mail" class="headline_social_link">Mail</a></li>
+      </ul>
     </header>
-    <main>
+
+    <main class="content content_main">
       <header>
-        <h2 class="secondary-headline">Experience</h2>
+        <h2 class="content_headline">Experience</h2>
       </header>
-      <ul>
-        <li>
-          <p class="company-name">Wolf Ollins<span class="job-date">2014–2017</span></p>
-          <div class="job-description">
-            <p class="job-title">Designer</p>
+      <ul class="content_experience">
+        <li class="experience_list">
+          <p class="experience_company">Wolf Ollins<span class="experience_year">2014–2017</span></p>
+          <div class="job_description">
+            <p class="job_title">Designer</p>
             <ul>
-              <li class="job-role">Work as multidisciplinary designer at international brand consultancy on strategy, design, and experience projects for technology, media, hospitality, non-profit, and arts/cultural</li>
-              <li class="job-role">Collaborate with diverse teams of strategists, designers, project managers, and developers, and directly with clientsand vendors</li>
+              <li class="job_role">Work as multidisciplinary designer at international brand consultancy on strategy, design, and experience projects for technology, media, hospitality, non-profit, and arts/cultural</li>
+              <li class="job_role">Collaborate with diverse teams of strategists, designers, project managers, and developers, and directly with clientsand vendors</li>
             </ul>
           </div>
         </li>
-        <li>
-          <p class="company-name">Freelance Designer<span class="job-date">2012–Present</span></p>
-          <div class="job-description">
-            <p  class="job-title">Mount Royal School of Art</p>
+        <li class="experience_list">
+          <p class="experience_company">Freelance Designer<span class="experience_year">2012–Present</span></p>
+          <div class="job_description">
+            <p  class="job_title">Mount Royal School of Art</p>
             <ul>
-              <li class="job-role">Worked with MICA MFA director to design posters for public lectures by visiting contemporary artists including Hans Haacke, Janine Antoni, and Jill Magid</li>
+              <li class="job_role">Worked with MICA MFA director to design posters for public lectures by visiting contemporary artists including Hans Haacke, Janine Antoni, and Jill Magid</li>
             </ul>
-            <p class="job-title title-plusone">MICA Graduate Studies</p>
+            <p class="job_title">MICA Graduate Studies</p>
             <ul>
-              <li class="job-role">Designed academic materials for graduate art and design programs</li>
+              <li class="job_role">Designed academic materials for graduate art and design programs</li>
             </ul>
-            <p class="job-title title-plusone">The Interdependence Project</p>
+            <p class="job_title">The Interdependence Project</p>
             <ul>
-              <li class="job-role">Managed web content for New York non-profit’s large online community and designed a series of fliers for classes and events</li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <p class="company-name">Brand Union<span class="job-date">June–August 2013</span></p>
-          <div class="job-description">
-            <p class="job-title">Design Intern</p>
-            <ul>
-              <li class="job-role">Designed communications, assets, and guidelines for clients including Vodafone and Bank of America</li>
+              <li class="job_role">Managed web content for New York non-profit’s large online community and designed a series of fliers for classes and events</li>
             </ul>
           </div>
         </li>
-        <li>
-          <p class="company-name">Center for Design<span class="job-date">January–May 2013</span></p>
-          <div class="job-description">
-            <p class="job-title">Designer</p>
+        <li class="experience_list">
+          <p class="experience_company">Brand Union<span class="experience_year">June–August 2013</span></p>
+          <div class="job_description">
+            <p class="job_title">Design Intern</p>
             <ul>
-              <li class="job-role">Part of a design team that worked with epidemiologists at Johns Hopkins School of Public Health to research and visualize the HIV epidemic in Baltimore City</li>
-              <li class="job-role">Used disease mapping and geographic data to propose a strategic design project and testing action kit for urban health providers</li>
+              <li class="job_role">Designed communications, assets, and guidelines for clients including Vodafone and Bank of America</li>
+            </ul>
+          </div>
+        </li>
+        <li class="experience_list">
+          <p class="experience_company">Center for Design<span class="experience_year">January–May 2013</span></p>
+          <div class="job_description">
+            <p class="job_title">Designer</p>
+            <ul>
+              <li class="job_role">Part of a design team that worked with epidemiologists at Johns Hopkins School of Public Health to research and visualize the HIV epidemic in Baltimore City</li>
+              <li class="job_role">Used disease mapping and geographic data to propose a strategic design project and testing action kit for urban health providers</li>
             </ul>
           </div>
         </li>
       </ul>
     </main>
-    <aside>
-      <section class="column-small">
-        <picture> <source srcset="images/transparent.png" media="(max-width: 500px)"> <source srcset="images/Photo.jpg"> <img class="portrait" srcset="images/Photo.jpg" alt="Thomas Anderson's Photo"> </picture>
+    <aside class="content content_aside">
+      <section class="column_small">
+        <picture> <source srcset="images/transparent.png" media="(max-width: 500px)"> <source srcset="images/Photo.jpg"> <img class="content_portrait" srcset="images/Photo.jpg" alt="Thomas Anderson's Photo"> </picture>
       </section>
-      <section class="column-small education-background">
+      <section class="column_small column_background_education">
         <header>
-          <h2 class="secondary-headline">Education</h2>
+          <h2 class="content_headline">Education</h2>
         </header>
         <div>
-          <p class="education-institute">Maryland Institute College of Art</p>
-          <p class="year">May 2014</p>
-          <p class="mobile-text">BFA in Graphic Design Baltimore, <br>
+          <p class="education_institute">Maryland Institute College of Art</p>
+          <p class="education_year">May 2014</p>
+          <p class="education_desciption">BFA in Graphic Design Baltimore, <br>
            MD Magna cum laude</p>
         </div>
       </section>
-      <section class="column-small skills-background">
+      <section class="column_small column_background_skills">
         <header>
-          <h2 class="secondary-headline">Skills</h2>
+          <h2 class="content_headline">Skills</h2>
         </header>
         <div>
-          <p class="mobile-text">Adobe Creative Suite (After Effects, Bridge, InDesign, Illustrator, Lightroom, Photoshop); CSS3/HTML5; Mac OS/Windows; Office/iWork</p>
-          <p class="mobile-text">Art direction, branding and identity, copy editing, data visualization, motion graphics, photography, publication design, typography, video editing, web design, writing and research</p>
+          <p class="skills_description">Adobe Creative Suite (After Effects, Bridge, InDesign, Illustrator, Lightroom, Photoshop); CSS3/HTML5; Mac OS/Windows; Office/iWork</p>
+          <p class="skills_description">Art direction, branding and identity, copy editing, data visualization, motion graphics, photography, publication design, typography, video editing, web design, writing and research</p>
         </div>
       </section>
     </aside>
