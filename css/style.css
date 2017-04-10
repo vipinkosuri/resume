@@ -243,7 +243,7 @@ ul{
 
 /* Responsive */
 
-@media screen and (min-width: 744px) and (max-width: 1036px) {
+@media screen and (min-device-width: 744px) and (max-device-width: 1036px) {
 
     body{ font-size: 1em;}
     .wrapper{ padding: 6em 2em;}
@@ -252,7 +252,7 @@ ul{
     .mobile-text{ font-size: 0.875em;}
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-device-width: 744px) {
 
   body{ font-size: 1em;}
   .headline{ padding-left: 0;}
@@ -270,11 +270,11 @@ ul{
   .portrait{ display: none;}
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-device-width: 620px) {
   .container{ border: 0;}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-device-width: 480px) {
   .company-name{ font-size: 1.7778em;}
   .job-date{ font-size: 0.428em; margin: 0.5em 0 0 0.5em;}
   .job-description{ padding-left: 0;}
