@@ -1,0 +1,203 @@
+/* Reset Styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+
+/* Fonts Reference */
+
+/* Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/* Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+/* latin */
+@font-face {
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Chivo Regular'), local('Chivo-Regular'), url(https://fonts.gstatic.com/s/chivo/v8/hBVCJrXaaeeHH0FNWdIheqCWcynf_cDxXwCLxiixG1c.woff2) format('woff2');
+}
+
+
+/* Layout */
+
+body{
+  font-family: "San Francisco", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.333em;
+  color: #333;
+	max-width: 1036px;
+	margin: 0 auto;
+}
+
+
+/*Structure*/
+
+.content{
+	margin: 0 3em 0;
+}
+
+.content_main, .column_background_education, .column_background_skills{
+	border-top: 3px solid #29ABE2;
+	box-sizing: border-box;
+	margin-top: 3em;
+}
+
+.content_experience, .education_institute, .education_year, .education_desciption, .skills_description{
+	max-width: 37.2222em;
+}
+
+.content_experience, .column_small div{
+  padding-left: 15em;
+}
+
+/*Header*/
+
+.headline{
+	position: relative;
+  min-width: 100%;
+  background-color: #29ABE2;
+  color: #FFF;
+  overflow: auto;
+	padding: 3em 3em 1em;
+	box-sizing: border-box;
+}
+
+/*Hidden*/
+.headline_logo{
+  display: none;
+}
+
+.headline_text{
+	font-size: 2.5em;
+  line-height: 1.02777em;
+  font-weight: 700;
+}
+
+.headline_social{
+	font-family: 'Chivo', sans-serif;
+	font-size: 0.6667em;
+	font-weight: 400;
+	color: #FFF;
+	letter-spacing: 1px;
+	text-decoration: underline dotted;
+	text-transform: uppercase;
+}
+
+.headline_social_link{
+  font-family: 'Chivo', sans-serif;
+  font-size: 0.6667em;
+  font-weight: 400;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-decoration: underline dotted;
+  text-transform: uppercase;
+  float:left;
+  margin: 1em 1.5em 0 0;
+}
+
+
+/*Heading*/
+.content_headline {
+  background-color: #29ABE2;
+  color: #FFF;
+	font-size: 1.125em;
+	font-weight: 700;
+	padding: 0.5em 0 0.5em 0.5em;
+	text-transform: uppercase;
+	max-width: 8.5em;
+}
+
+
+
+/*Styling*/
+
+/*Sub-Heading*/
+.experience_company, .education_institute{
+	color: #29ABE2;
+	font-size: 1.7778em;
+	line-height: 1em;
+}
+
+.experience_year{
+	font-size: 0.5em;
+	font-weight: 700;
+	margin-left: 4px;
+}
+
+.job_description{
+	margin-bottom: 1em;
+}
+
+.job_title{
+	font-size: 0.7778em;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0.5em 0 0.25em;
+}
+
+.job_role{
+	padding-bottom: 0.6667em;
+}
+
+.education_institute{
+	margin-bottom: 0.5em;
+}
+
+
+
+/*Hidden*/
+.content_portrait{
+  display: none;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 860px) {
+    body{ font-size: 1em;}
+		.content_headline{ margin-bottom: 1em;}
+		.content_experience, .column_small div{ padding-left: 2em;}
+}
+
+@media only screen and (max-width: 600px) {
+
+  body{ font-size: 1em;}
+  .headline{ padding: 3em 1em 1em;}
+	.content{ margin: 3em 1em 0;}
+	.content_headline{ margin-bottom: 1em;}
+	.content_experience, .column_small div{ padding-left: 0.5em;}
+	.experience_company, .education_institute{ font-size: 1.5em;}
+}
