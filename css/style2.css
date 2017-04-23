@@ -60,8 +60,9 @@ body{
   font-size: 1.125em;
   line-height: 1.333em;
   color: #333;
-	max-width: 1036px;
-	margin: 0 auto;
+  max-width: 1036px;
+  margin: 0 auto;
+  padding-bottom: 2em;
 }
 
 
